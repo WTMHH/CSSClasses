@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--This is a doctype. Every HTML file should have one.
+Basically you only need this one nowadays, as this means HTML5 (what you're learning here)
+for modern browsers but old browsers still pick up that your file is some kind of HTML.-->
+<html>
+<!-- Here the HTML starts, so we put an opening <html> tag here. -->
+<head>
+<!-- ... -->
+  <style type="text/css">
+   
+      
+      body {
+          background-color: black;
+          margin: 0;
+          padding: 0;
+           animation-name: background_fadeout;
+          animation-duration: 2s;
+          animation-delay: 4.5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          animation-timing-function: ease-out;
+      }
+      
+    .video_size > video {
+      width: 100%;
+      height: auto;
+        
+    }
+      
+     
+      
+      .video_size {
+          width: 100vw;
+          opacity: 1;
+           position: absolute;
+          top:0px;
+          pointer-events: none;
+          animation-name: video_fadeout;
+          animation-duration: 2s;
+          animation-delay: 3s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          animation-timing-function: ease-out;
+          
+           
+      }
+      
+      .text {
+         opacity: 0;
+          height: 100vh;
+          width: 100vw;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+           animation-name: text_fadein;
+          animation-duration: 2s;
+          animation-delay: 6s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          animation-timing-function: ease-out;
+       
+        
+      }
+      
+      @keyframes video_fadeout {
+          0% {
+              opacity:1;
+             
+          }
+          
+          100% {
+              opacity: 0;
+              
+          }
+          
+          
+      }
+      
+      @keyframes background_fadeout {
+          0% {
+              
+              background-color: black;
+          }
+          
+          100% {
+             
+               background-color: white;
+          }
+          
+      }
+      
+       @keyframes text_fadein {
+          0% {
+              
+              opacity: 0;
+          }
+          
+          100% {
+             
+               opacity: 1;
+          }
+          
+      }
+      
+  </style>
+</head>
+    
+<body>
+    
+     <div class="video_size">
+            <video autoplay loop>
+              <source src="forest-fire.webm">
+              <source src="IMG/Smoke-SD.mp4">
+                 <h1>A world Aflame</h1>
+            </video>
+    </div>
+    
+    <div class="text">
+        <a href="www.moinworld.de"><h1>test</h1></a>
+            
+    </div>
+    
+    
+ <!-- <div class="changeonhover">Hover me! Hover Me!</div>-->
+</body>
+</html>
